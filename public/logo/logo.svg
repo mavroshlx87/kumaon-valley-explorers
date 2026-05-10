@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Circular Border and Background -->
+  <circle cx="100" cy="100" r="94" stroke="#4a5d53" stroke-width="3" fill="#f9f7f2"/>
+  <circle cx="100" cy="100" r="88" stroke="#7e9ba9" stroke-width="1" fill="none" stroke-dasharray="3 3"/>
+  
+  <!-- Mountain Graphic with updated color -->
+  <g fill="#7e9ba9" transform="translate(32.5, 35) scale(1.0)">
+    <path d="M 5 65 L 35 25 L 50 45 L 35 55 L 45 68 L 25 50 Z" />
+    <path d="M 35 45 L 65 5 L 110 50 L 95 55 L 65 25 L 50 45 Z" />
+    <path d="M 65 42 L 105 75 L 95 80 L 55 48 Z" />
+    <path d="M 75 32 L 95 15 L 140 50 L 130 55 L 95 25 Z" />
+  </g>
+
+  <!-- Text inside the circle with Wanderbug-inspired Serif Font (Cormorant Garamond feel) -->
+  <text x="100" y="145" font-family="'Cormorant Garamond', Georgia, serif" font-weight="600" font-size="28" fill="#4a5d53" text-anchor="middle">Kumaon</text>
+  <text x="100" y="172" font-family="'Cormorant Garamond', Georgia, serif" font-weight="600" font-size="28" fill="#4a5d53" text-anchor="middle">Valley</text>
+</svg>
