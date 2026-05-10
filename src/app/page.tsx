@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { destinations } from "@/content/data";
+import { siteConfig } from "@/config/site";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       <section className="relative w-full aspect-video min-h-[450px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero.png"
+            src={`${siteConfig.basePath}/images/hero.png`}
             alt="Lush green Kumaon valleys with snow-capped Himalayan peaks"
             fill
             className="object-cover brightness-[0.8]"

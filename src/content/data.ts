@@ -1,16 +1,19 @@
+import { siteConfig } from "@/config/site";
+const prefix = siteConfig.basePath;
+
 // Destinations (Places, not packages)
 export const destinations = [
   {
     id: "almora",
     title: "Almora",
     description: "Perched on a horse-saddle shaped ridge, Almora is the cultural capital of Kumaon. Known for its distinct heritage, ancient temples like Nanda Devi, and the bustling 200-year-old Lala Bazar, it offers a perfect blend of history and Himalayan vistas.",
-    image: "/images/dest_almora.png",
+    image: `${prefix}/images/dest_almora.png`,
   },
   {
     id: "jageshwar",
     title: "Jageshwar Dham",
     description: "A cluster of over 100 ancient stone temples dedicated to Lord Shiva, nestled in a dense, mystical forest of towering Deodar trees. Jageshwar is one of the most sacred and spiritually charged sites in the Kumaon region.",
-    image: "/images/dest_jageshwar.png",
+    image: `${prefix}/images/dest_jageshwar.png`,
   },
   {
     id: "panchachuli",

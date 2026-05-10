@@ -1,8 +1,11 @@
+const isProd = process.env.NODE_ENV === 'production';
+
 export const siteConfig = {
   name: "Kumaon Valley Explorers",
   shortName: "KVE",
   domain: "kumaonvalley.in",
   url: "https://kumaonvalley.in",
+  basePath: isProd ? '/kumaon-valley-explorers' : '',
   description: "Experience profound peace, spiritual rejuvenation, and serene holidays in the majestic Kumaon Himalayas.",
   contact: {
     email: "kumaonvalleyexplorers@gmail.com",

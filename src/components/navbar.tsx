@@ -13,7 +13,12 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center space-x-2">
-          <Image src="/logo/icon.svg" alt={siteConfig.name} width={32} height={32} />
+          <Image 
+            src={`${siteConfig.basePath}/logo/icon.svg`} 
+            alt={siteConfig.name} 
+            width={32} 
+            height={32} 
+          />
           <span className="hidden font-bold sm:inline-block text-primary">
             {siteConfig.name}
           </span>

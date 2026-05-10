@@ -10,55 +10,55 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <div className="container mx-auto px-4 py-16 max-w-6xl">
-      <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-light mb-6 text-primary font-serif">Get in Touch</h1>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+      <div className="text-center mb-8">
+        <h1 className="text-3xl md:text-4xl font-light mb-4 text-primary font-serif">Get in Touch</h1>
+        <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
           Ready to experience the tranquility of the Himalayas? Reach out to us to book a peaceful retreat, customize a family itinerary, or simply ask a question.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 bg-card rounded-[2rem] shadow-xl overflow-hidden border border-border mt-12">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 bg-card rounded-[2rem] shadow-xl overflow-hidden border border-border mt-8">
         {/* Contact Info */}
-        <div className="bg-primary p-12 text-primary-foreground flex flex-col justify-between">
+        <div className="bg-primary p-10 text-primary-foreground flex flex-col justify-between">
           <div>
-            <h2 className="text-3xl font-light mb-10 font-serif">We are here for you</h2>
-            <div className="space-y-8">
-              <div className="flex items-start gap-6">
-                <div className="bg-primary-foreground/10 p-3 rounded-full shrink-0">
-                  <span className="text-xl">📍</span>
+            <h2 className="text-2xl font-light mb-8 font-serif">We are here for you</h2>
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <div className="bg-primary-foreground/10 p-2.5 rounded-full shrink-0">
+                  <span className="text-lg">📍</span>
                 </div>
                 <div>
-                  <h4 className="font-medium text-lg">Our Office</h4>
-                  <p className="text-primary-foreground/80 mt-2 leading-relaxed">{siteConfig.contact.address}</p>
+                  <h4 className="font-medium">Our Office</h4>
+                  <p className="text-primary-foreground/80 mt-1 text-sm leading-relaxed">{siteConfig.contact.address}</p>
                 </div>
               </div>
-              <div className="flex items-start gap-6">
-                <div className="bg-primary-foreground/10 p-3 rounded-full shrink-0">
-                  <span className="text-xl">📞</span>
+              <div className="flex items-start gap-4">
+                <div className="bg-primary-foreground/10 p-2.5 rounded-full shrink-0">
+                  <span className="text-lg">📞</span>
                 </div>
                 <div>
-                  <h4 className="font-medium text-lg">Call Us</h4>
-                  <p className="text-primary-foreground/80 mt-2 leading-relaxed">{siteConfig.contact.phone}</p>
+                  <h4 className="font-medium">Call Us</h4>
+                  <p className="text-primary-foreground/80 mt-1 text-sm leading-relaxed">{siteConfig.contact.phone}</p>
                 </div>
               </div>
-              <div className="flex items-start gap-6">
-                <div className="bg-primary-foreground/10 p-3 rounded-full shrink-0">
-                  <span className="text-xl">✉️</span>
+              <div className="flex items-start gap-4">
+                <div className="bg-primary-foreground/10 p-2.5 rounded-full shrink-0">
+                  <span className="text-lg">✉️</span>
                 </div>
                 <div>
-                  <h4 className="font-medium text-lg">Write to Us</h4>
-                  <p className="text-primary-foreground/80 mt-2 leading-relaxed">{siteConfig.contact.email}</p>
+                  <h4 className="font-medium">Write to Us</h4>
+                  <p className="text-primary-foreground/80 mt-1 text-sm leading-relaxed">{siteConfig.contact.email}</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="mt-16">
-            <h4 className="font-medium mb-6">Follow our journey of peace</h4>
-            <div className="flex gap-4">
-              <a href={siteConfig.social.instagram} className="bg-primary-foreground/10 hover:bg-primary-foreground/20 px-6 py-2 rounded-full transition-colors text-sm font-medium tracking-wide">
+          <div className="mt-10">
+            <h4 className="font-medium mb-4 text-sm uppercase tracking-wider opacity-80">Follow our journey</h4>
+            <div className="flex gap-3">
+              <a href={siteConfig.social.instagram} className="bg-primary-foreground/10 hover:bg-primary-foreground/20 px-5 py-2 rounded-full transition-colors text-xs font-medium tracking-wide">
                 Instagram
               </a>
-              <a href={siteConfig.social.facebook} className="bg-primary-foreground/10 hover:bg-primary-foreground/20 px-6 py-2 rounded-full transition-colors text-sm font-medium tracking-wide">
+              <a href={siteConfig.social.facebook} className="bg-primary-foreground/10 hover:bg-primary-foreground/20 px-5 py-2 rounded-full transition-colors text-xs font-medium tracking-wide">
                 Facebook
               </a>
             </div>
@@ -66,8 +66,8 @@ export default function ContactPage() {
         </div>
 
         {/* Form */}
-        <div className="p-12">
-          <h2 className="text-2xl font-medium mb-8 text-foreground font-serif">Quick Enquiry</h2>
+        <div className="p-10">
+          <h2 className="text-xl font-medium mb-6 text-foreground font-serif">Quick Enquiry</h2>
           <ContactForm />
         </div>
       </div>
