@@ -84,15 +84,17 @@ export default function Home() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {destinations.slice(0, 3).map((dest) => (
-              <Link key={dest.id} href="/destinations" className="group relative h-96 rounded-3xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
-                <Image
-                  src={dest.image}
-                  alt={dest.title}
-                  fill
-                  className="object-cover brightness-75 group-hover:brightness-90 transition-all duration-500"
-                />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <h3 className="text-white text-3xl font-serif font-light capitalize tracking-wide text-center px-4">{dest.title}</h3>
+              <Link key={dest.id} href="/destinations" className="group block">
+                <h3 className="text-xl font-serif font-light capitalize tracking-wide text-primary mb-4 transition-colors group-hover:text-accent">
+                  {dest.title}
+                </h3>
+                <div className="relative h-80 rounded-3xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                  <Image
+                    src={dest.image}
+                    alt={dest.title}
+                    fill
+                    className="object-cover transition-all duration-500"
+                  />
                 </div>
               </Link>
             ))}

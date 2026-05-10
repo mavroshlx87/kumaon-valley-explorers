@@ -24,7 +24,7 @@ export const destinations = [
   {
     id: "thal-kedar",
     title: "Thal Kedar Trek",
-    description: "A sacred pilgrimage trek leading to a mountain top Shiva temple at 2,000 meters. The trail offers breathtaking 360-degree views of the Greater Himalayas, passing through ancient forests and high ridges.",
+    description: "A sacred pilgrimage trek leading to a mountain-top Shiva temple at 2,000 meters. The trail offers breathtaking 360-degree views of the Greater Himalayas, passing through ancient forests and high ridges.",
     image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=2000",
   },
   {
