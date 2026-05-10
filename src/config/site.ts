@@ -16,6 +16,7 @@ export const siteConfig = {
     instagram: "https://instagram.com/kumaonvalleyexplorers",
     facebook: "https://facebook.com/kumaonvalleyexplorers",
     twitter: "https://twitter.com/kumaonvalley",
+    youtube: "https://youtube.com/@kumaonvalleyexplorers",
   },
   navLinks: [
     { name: "Home", href: "/" },
