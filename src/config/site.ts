@@ -31,7 +31,6 @@ export const siteConfig = {
         { name: "Tours & Travel Plans", href: "/contact?service=tours" }
       ]
     },
-    { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
   ],
 };

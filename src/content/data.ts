@@ -1,84 +1,123 @@
 import { siteConfig } from "@/config/site";
 const prefix = siteConfig.basePath;
 
-// Destinations (Places, not packages)
+// All images are referenced relatively using the prefix helper
 export const destinations = [
+  {
+    id: "nainital",
+    title: "Nainital",
+    description: "Famous for the serene Naini Lake and sacred Naina Devi Temple. Enjoy boating and strolling along Mall Road's bustling charm.",
+    image: "https://images.unsplash.com/photo-1621685458061-e5d0d829146f?q=80&w=2070&auto=format&fit=crop",
+  },
   {
     id: "almora",
     title: "Almora",
-    description: "Perched on a horse-saddle shaped ridge, Almora is the cultural capital of Kumaon. Known for its distinct heritage, ancient temples like Nanda Devi, and the bustling 200-year-old Lala Bazar, it offers a perfect blend of history and Himalayan vistas.",
+    description: "Steeped in history, captivates with Kasar Devi Temple and Zero Point views. Ideal for trekking and exploring local markets.",
     image: `${prefix}/images/dest_almora.png`,
   },
   {
+    id: "ranikhet",
+    title: "Ranikhet",
+    description: "The 'city of tranquility' offers Jhula Devi Temple and Chaubatia Orchards. A peaceful retreat far from urban hustle.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Panorama_of_Himalayas_from_Ranikhet%2C_Uttarakhand%2C_India.jpg",
+  },
+  {
+    id: "mukteshwar",
+    title: "Mukteshwar",
+    description: "Renowned for Chauli ki Jali views and old-world Mukteshwar Temple. A popular spot for rock climbing and adventure.",
+    image: "https://images.unsplash.com/photo-1545642442-9993322f3066?q=80&w=2070&auto=format&fit=crop",
+  },
+  {
+    id: "binsar",
+    title: "Binsar",
+    description: "A wildlife haven with the breathtaking Zero Point. Offers 360-degree Himalayan views and serene forest trails.",
+    image: "https://images.unsplash.com/photo-1544735749-3179213894a7?q=80&w=2070&auto=format&fit=crop",
+  },
+  {
+    id: "kausani",
+    title: "Kausani",
+    description: "Boasts mesmerizing vistas and the spiritual aura of Anasakti Ashram. Enjoy nature walks and tea garden visits.",
+    image: "https://images.unsplash.com/photo-1506102383123-c8ef1e872756?q=80&w=2070&auto=format&fit=crop",
+  },
+  {
+    id: "pithoragarh",
+    title: "Pithoragarh",
+    description: "Enchants with historical sites like Pithoragarh Fort and Dhwaj Temple. Perfect for sightseeing in the Kumaon hills.",
+    image: "https://images.unsplash.com/photo-1624285172607-88981e42813c?q=80&w=2070&auto=format&fit=crop",
+  },
+  {
+    id: "bhimtal",
+    title: "Bhimtal",
+    description: "Features the expansive Bhimtal Lake and Victoria Dam. Ideal for boating, bird watching, and quiet nature moments.",
+    image: "https://images.unsplash.com/photo-1596395817185-515d39ff4fa1?q=80&w=2070&auto=format&fit=crop",
+  },
+  {
     id: "jageshwar",
-    title: "Jageshwar Dham",
-    description: "A cluster of over 100 ancient stone temples dedicated to Lord Shiva, nestled in a dense, mystical forest of towering Deodar trees. Jageshwar is one of the most sacred and spiritually charged sites in the Kumaon region.",
+    title: "Jageshwar",
+    description: "Famous for its ancient 12th-century temple complex. A profound spiritual highlight nestled in dense cedar forests.",
     image: `${prefix}/images/dest_jageshwar.png`,
   },
   {
-    id: "panchachuli",
-    title: "Panchachuli Base Camp",
-    description: "Journey deep into the Darma Valley to witness the majestic Five Peaks of Panchachuli. The base camp offers an up-close view of these jagged, snow-clad giants, surrounded by vibrant alpine meadows and roaring mountain streams.",
-    image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=2000",
+    id: "munsiyari",
+    title: "Munsiyari",
+    description: "The gateway to Panchachuli Peaks and Birthi Falls. Offers rugged trekking landscapes and breathtaking alpine views.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/ea/Panchachuli_peaks_from_Munsyari.jpg",
   },
   {
-    id: "thal-kedar",
-    title: "Thal Kedar Trek",
-    description: "A sacred pilgrimage trek leading to a mountain-top Shiva temple at 2,000 meters. The trail offers breathtaking 360-degree views of the Greater Himalayas, passing through ancient forests and high ridges.",
-    image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=2000",
+    id: "adi-kailash",
+    title: "Adi Kailash",
+    description: "The 'Chotta Kailash' is a sacred peak offering a profound spiritual journey and striking resemblance to Mt. Kailash.",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/9e/ADI_KAILASH.jpg",
   },
   {
-    id: "narayan-ashram",
-    title: "Narayan Ashram",
-    description: "Established in 1936, this spiritual sanctuary is located at an altitude of 2,734m. It is a center of peace and social service, surrounded by lush gardens and overlooking the snow peaks of the Dharchula region.",
-    image: "https://images.unsplash.com/photo-1544365558-35aa4afcf11f?auto=format&fit=crop&q=80&w=2000",
+    id: "om-parbat",
+    title: "Om Parbat",
+    description: "A natural wonder where snow falls in the shape of 'Om'. One of the world's most spiritually significant peaks.",
+    image: "https://offbeatwanderers.com/storage/2024/03/om-parvat.jpg",
   }
 ];
 
 export const experiences = [
   {
     icon: "🧘‍♀️",
-    title: "Yoga & Wellness retreats",
-    description: "Begin your mornings with gentle guided yoga sessions amidst the pine forests, focusing on breathing and mobility suited for all age groups."
+    title: "Yoga & Wellness",
+    description: "Morning guided sessions amidst pine forests, focusing on mobility suited for all age groups."
   },
   {
     icon: "🛕",
-    title: "Temple & Heritage Walks",
-    description: "Slow-paced, culturally enriching walks through ancient temple complexes and heritage villages with expert local storytellers."
+    title: "Heritage Walks",
+    description: "Slow-paced, culturally enriching walks through ancient villages with expert local storytellers."
   },
   {
     icon: "☕",
-    title: "Comfortable Homestays",
-    description: "Stay in premium, carefully curated local homestays that offer modern comforts, warm hospitality, and pure organic local cuisine."
+    title: "Boutique Stays",
+    description: "Curated local homestays offering modern comforts, warm hospitality, and organic Pahadi cuisine."
   }
 ];
 
 export const team = [
   {
     name: "Govind Singh",
-    role: "Lead Local Host & Caretaker",
-    bio: "With over 20 years of experience, Govind treats every guest like family. He ensures that all dietary needs and physical comforts are meticulously taken care of."
+    role: "Lead Local Host",
+    bio: "With 20+ years of experience, Govind treats every guest like family, ensuring meticulous care and comfort."
   },
   {
     name: "Dr. Aarti Joshi",
-    role: "Wellness & Culture Guide",
-    bio: "A local expert in Kumaoni heritage and Ayurvedic wellness. Dr. Joshi leads our gentle morning yoga and insightful heritage walks."
+    role: "Wellness Guide",
+    bio: "A local expert in Kumaoni heritage and Ayurveda. She leads our gentle yoga and insightful heritage walks."
   }
 ];
 
-export const blogPosts = [
-  {
-    id: "packing-for-peace",
-    title: "Packing for a Peaceful Himalayan Retreat",
-    excerpt: "Leave the heavy gear behind. Here is a simple guide on what to bring for a relaxed, spiritual journey in Kumaon.",
-    date: "May 12, 2024",
-    content: "When traveling for peace, less is more. We recommend comfortable walking shoes, warm layers for the evening, and an open heart. Our homestays provide all necessary amenities, allowing you to travel light and relaxed."
-  },
-  {
-    id: "spiritual-history-kasar",
-    title: "The Magnetic Pull of Kasar Devi",
-    excerpt: "Discover why seekers like Swami Vivekananda and Bob Dylan were drawn to this quiet ridge.",
-    date: "April 28, 2024",
-    content: "Kasar Devi sits on the Van Allen Belt, giving it a unique geomagnetic energy. Meditating here, even for a few minutes, brings profound stillness. Our gentle walks take you to the very spots where history's great minds found their peace."
-  }
-];
+export const aboutContent = {
+  philosophy: [
+    "We founded Kumaon Valley Explorers with a simple belief: life doesn’t need to be rushed. We created these journeys for seniors, retired travelers, and families seeking peace and renewal.",
+    "Stay in cozy village homestays, live the gentle rhythm of mountain life, savor authentic Pahadi meals made with love, and explore quiet trails and temples at your own pace.",
+    "Our caring local guides ensure comfort while you enjoy yoga, holistic wellness practices, and soul-nourishing spiritual moments.",
+    "Here, you don’t just visit the mountains — you feel them. Welcome to your mountain sanctuary."
+  ],
+  promises: [
+    { title: "Absolute Comfort", desc: "Handpicked accommodations, comfortable transport, and journeys tailored entirely to your physical comfort and pace." },
+    { title: "Spiritual Depth", desc: "Meaningful interactions with local culture, visits to ancient temples, and time dedicated to quiet reflection." },
+    { title: "Dedicated Care", desc: "Our local hosts treat you like family, ensuring dietary and personal preferences are always met." }
+  ]
+};

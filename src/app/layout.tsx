@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, EB_Garamond } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/config/site";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import { ChatWidget } from "@/components/chat-widget";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
+const ebGaramond = EB_Garamond({ subsets: ["latin"], variable: '--font-eb-garamond' });
 
 export const metadata: Metadata = {
   title: {
@@ -32,11 +32,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} min-h-screen flex flex-col`}>
+      <body className={`${inter.variable} ${ebGaramond.variable} font-body min-h-screen flex flex-col`}>
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
-        <ChatWidget />
       </body>
     </html>
   );

@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #f9f7f2; /* Soft linen beige like Wanderbug */
-  --foreground: #333333; /* Darker charcoal for better contrast */
+  --background: #f5f8fa;
+  --foreground: #2d2d2d;
   
-  --primary: #4a5d53; /* More muted, deep forest green */
+  --primary: #0c384e;
   --primary-foreground: #ffffff;
   
-  --secondary: #7e9ba9; /* Muted slate blue */
+  --secondary: #7e9ba9;
   --secondary-foreground: #ffffff;
   
-  --accent: #bc8f65; /* Muted copper/sand */
+  --accent: #ff9f1c;
   --accent-foreground: #ffffff;
   
   --muted: #efede6;
@@ -33,8 +32,8 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
   
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-body: var(--font-inter);
+  --font-serif: var(--font-eb-garamond);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -58,11 +57,17 @@
   }
 }
 
-body {
+html, body {
+  @apply overflow-x-hidden w-full;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-  @apply antialiased text-base leading-relaxed;
+  font-family: var(--font-inter), sans-serif;
+  @apply antialiased text-base leading-relaxed font-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-eb-garamond), serif;
+  @apply font-serif;
 }
 
 /* Custom Utilities for glassmorphism */

@@ -10,6 +10,22 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "images.unsplash.com",
       },
+      {
+        protocol: "https",
+        hostname: "upload.wikimedia.org",
+      },
+      {
+        protocol: "https",
+        hostname: "www.chardhamtour.in",
+      },
+      {
+        protocol: "https",
+        hostname: "vushii.com",
+      },
+      {
+        protocol: "https",
+        hostname: "offbeatwanderers.com",
+      },
     ],
   },
 };

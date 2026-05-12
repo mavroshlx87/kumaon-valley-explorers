@@ -1,115 +1,71 @@
-import { ContactForm } from "@/components/contact-form";
-import { siteConfig } from "@/config/site";
-import { team } from "@/content/data";
+import { ContactForm } from '@/components/contact-form';
+import { SectionHeader } from '@/components/SectionHeader';
+import { ContactInfoCard } from '@/components/ContactInfoCard';
+import { FramerWrapper } from '@/components/FramerWrapper';
+import { team } from '@/content/data';
 
 export const metadata = {
-  title: "Contact Us",
-  description: "Reach out to us to plan your peaceful Himalayan retreat.",
+  title: 'Contact Us',
+  description: 'Reach out to us to plan your peaceful Himalayan retreat.',
 };
 
 export default function ContactPage() {
   return (
-    <div className="container mx-auto px-4 py-16 max-w-6xl">
-      <div className="text-center mb-8">
-        <h1 className="text-3xl md:text-4xl font-light mb-4 text-primary font-serif">Get in Touch</h1>
-        <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          Ready to experience the tranquility of the Himalayas? Reach out to us to book a peaceful retreat, customize a family itinerary, or simply ask a question.
-        </p>
-      </div>
-
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 bg-card rounded-[2rem] shadow-xl overflow-hidden border border-border mt-8">
-        {/* Contact Info */}
-        <div className="bg-primary p-10 text-primary-foreground flex flex-col justify-between">
-          <div>
-            <h2 className="text-2xl font-light mb-8 font-serif">We are here for you</h2>
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="bg-primary-foreground/10 p-2.5 rounded-full shrink-0">
-                  <span className="text-lg">📍</span>
-                </div>
-                <div>
-                  <h4 className="font-medium">Our Office</h4>
-                  <p className="text-primary-foreground/80 mt-1 text-sm leading-relaxed">{siteConfig.contact.address}</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="bg-primary-foreground/10 p-2.5 rounded-full shrink-0">
-                  <span className="text-lg">📞</span>
-                </div>
-                <div>
-                  <h4 className="font-medium">Call Us</h4>
-                  <p className="text-primary-foreground/80 mt-1 text-sm leading-relaxed">{siteConfig.contact.phone}</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="bg-primary-foreground/10 p-2.5 rounded-full shrink-0">
-                  <span className="text-lg">✉️</span>
-                </div>
-                <div>
-                  <h4 className="font-medium">Write to Us</h4>
-                  <p className="text-primary-foreground/80 mt-1 text-sm leading-relaxed">{siteConfig.contact.email}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="mt-10">
-            <h4 className="font-medium mb-4 text-sm uppercase tracking-wider opacity-80">Follow our journey</h4>
-            <div className="flex gap-4">
-              <a href={siteConfig.social.instagram} className="bg-primary-foreground/10 hover:bg-primary-foreground/20 p-3 rounded-full transition-colors" title="Instagram">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-              </a>
-              <a href={siteConfig.social.facebook} className="bg-primary-foreground/10 hover:bg-primary-foreground/20 p-3 rounded-full transition-colors" title="Facebook">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-              </a>
-              <a href={siteConfig.social.youtube} className="bg-primary-foreground/10 hover:bg-primary-foreground/20 p-3 rounded-full transition-colors" title="YouTube">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
-              </a>
-            </div>
+    <main className="bg-background py-20">
+      <SectionHeader
+        title="Get in Touch"
+        subtitle="We’re here to help you plan your perfect getaway"
+      />
+      <FramerWrapper className="container mx-auto px-4 max-w-6xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <ContactInfoCard />
+          <div className="bg-white p-10 rounded-[2rem] shadow-xl border border-border/40">
+            <h2 className="text-xl font-medium mb-6 text-foreground font-serif">Quick Enquiry</h2>
+            <ContactForm />
           </div>
         </div>
 
-        {/* Form */}
-        <div className="p-10">
-          <h2 className="text-xl font-medium mb-6 text-foreground font-serif">Quick Enquiry</h2>
-          <ContactForm />
+        {/* Google Map */}
+        <div className="mt-20 rounded-[2rem] overflow-hidden shadow-xl border border-border h-[400px]">
+          <iframe
+            src="https://maps.google.com/maps?q=Bilaspur+Kandli,+Dehradun,+Uttarakhand&hl=en&z=14&output=embed"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen={false}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Kumaon Valley Explorers Location"
+          ></iframe>
         </div>
-      </div>
 
-      {/* Google Map */}
-      <div className="mt-16 rounded-[2rem] overflow-hidden shadow-xl border border-border h-[400px]">
-        <iframe 
-          src="https://maps.google.com/maps?q=Bilaspur+Kandli,+Dehradun,+Uttarakhand&hl=en&z=14&output=embed" 
-          width="100%" 
-          height="100%" 
-          style={{ border: 0 }} 
-          allowFullScreen={false} 
-          loading="lazy" 
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Kumaon Valley Explorers Location"
-        ></iframe>
-      </div>
-
-      {/* Our Guides Section */}
-      <div className="mt-24">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-light mb-6 text-primary font-serif">Our Local Hosts</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Meet the gentle, experienced locals who will be your companions and caretakers in the mountains.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-          {team.map((member, index) => (
-            <div key={index} className="bg-card border border-border rounded-[2rem] p-10 text-center shadow-sm">
-              <div className="w-32 h-32 mx-auto rounded-full bg-primary/10 border-4 border-background shadow-inner mb-6 flex items-center justify-center text-4xl text-primary font-light font-serif">
-                {member.name.charAt(0)}
+        {/* Our Guides Section */}
+        <div className="mt-32">
+          <SectionHeader
+            title="Our Local Hosts"
+            subtitle="Meet the gentle, experienced locals who will be your companions and caretakers in the mountains."
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            {team.map((member, index) => (
+              <div
+                key={index}
+                className="bg-card border border-border rounded-[2rem] p-10 text-center shadow-sm"
+              >
+                <div className="w-32 h-32 mx-auto rounded-full bg-primary/10 border-4 border-background shadow-inner mb-6 flex items-center justify-center text-4xl text-primary font-light font-serif">
+                  {member.name.charAt(0)}
+                </div>
+                <h3 className="text-2xl font-medium text-primary mb-2 font-serif">
+                  {member.name}
+                </h3>
+                <p className="text-secondary font-medium mb-6 uppercase text-sm tracking-widest">
+                  {member.role}
+                </p>
+                <p className="text-muted-foreground leading-relaxed text-lg">{member.bio}</p>
               </div>
-              <h3 className="text-2xl font-medium text-foreground mb-2 font-serif">{member.name}</h3>
-              <p className="text-secondary font-medium mb-6 uppercase text-sm tracking-widest">{member.role}</p>
-              <p className="text-muted-foreground leading-relaxed text-lg">{member.bio}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </div>
+      </FramerWrapper>
+    </main>
   );
 }
