@@ -1,7 +1,7 @@
 import { Section } from '@/components/Section';
 import { ExperienceSection } from '@/components/ExperienceSection';
 import { experiences } from '@/content/data';
-
+import { siteConfig } from '@/config/site';
 export const metadata = {
   title: 'Experiences',
   description: 'Immerse yourself in culture, wellness, and peace in Kumaon.',
@@ -34,14 +34,14 @@ export default function ExperiencesPage() {
       <ExperienceSection
         title="Cultural Immersion"
         description="Visit ancient temples, learn traditional Kumaoni crafts, and share soulful meals with local families. Experience the warmth of mountain hospitality first-hand."
-        imageUrl="https://images.unsplash.com/photo-1589136775551-37d40a5a3a71?q=80&w=2070&auto=format&fit=crop"
+        imageUrl={`${siteConfig.basePath}/images/hiljatra.png`}
         reverse
       />
 
       <ExperienceSection
-        title="Boutique Homestays"
+        title="Premium Mountain Retreats"
         description="Stay in premium, carefully curated local homestays that offer modern comforts, warm hospitality, and pure organic local cuisine. Chosen for their stunning views and soul-soothing peace."
-        imageUrl="https://images.unsplash.com/photo-1598344346951-045aefcb030a?q=80&w=2070&auto=format&fit=crop"
+        imageUrl={`${siteConfig.basePath}/images/homestay.png`}
       />
     </main>
   );

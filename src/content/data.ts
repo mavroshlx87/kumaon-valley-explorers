@@ -7,7 +7,7 @@ export const destinations = [
     id: "nainital",
     title: "Nainital",
     description: "Famous for the serene Naini Lake and sacred Naina Devi Temple. Enjoy boating and strolling along Mall Road's bustling charm.",
-    image: "https://images.unsplash.com/photo-1621685458061-e5d0d829146f?q=80&w=2070&auto=format&fit=crop",
+    image: `${prefix}/images/dest_nainital.png`,
   },
   {
     id: "almora",
@@ -25,31 +25,31 @@ export const destinations = [
     id: "mukteshwar",
     title: "Mukteshwar",
     description: "Renowned for Chauli ki Jali views and old-world Mukteshwar Temple. A popular spot for rock climbing and adventure.",
-    image: "https://images.unsplash.com/photo-1545642442-9993322f3066?q=80&w=2070&auto=format&fit=crop",
+    image: `${prefix}/images/dest_mukteshwar.png`,
   },
   {
     id: "binsar",
     title: "Binsar",
     description: "A wildlife haven with the breathtaking Zero Point. Offers 360-degree Himalayan views and serene forest trails.",
-    image: "https://images.unsplash.com/photo-1544735749-3179213894a7?q=80&w=2070&auto=format&fit=crop",
+    image: `${prefix}/images/dest_binsar.png`,
   },
   {
     id: "kausani",
     title: "Kausani",
     description: "Boasts mesmerizing vistas and the spiritual aura of Anasakti Ashram. Enjoy nature walks and tea garden visits.",
-    image: "https://images.unsplash.com/photo-1506102383123-c8ef1e872756?q=80&w=2070&auto=format&fit=crop",
+    image: `${prefix}/images/dest_kausani.png`,
   },
   {
     id: "pithoragarh",
     title: "Pithoragarh",
     description: "Enchants with historical sites like Pithoragarh Fort and Dhwaj Temple. Perfect for sightseeing in the Kumaon hills.",
-    image: "https://images.unsplash.com/photo-1624285172607-88981e42813c?q=80&w=2070&auto=format&fit=crop",
+    image: `${prefix}/images/dest_pithoragarh.png`,
   },
   {
     id: "bhimtal",
     title: "Bhimtal",
     description: "Features the expansive Bhimtal Lake and Victoria Dam. Ideal for boating, bird watching, and quiet nature moments.",
-    image: "https://images.unsplash.com/photo-1596395817185-515d39ff4fa1?q=80&w=2070&auto=format&fit=crop",
+    image: `${prefix}/images/dest_bhimtal.png`,
   },
   {
     id: "jageshwar",
@@ -61,7 +61,7 @@ export const destinations = [
     id: "munsiyari",
     title: "Munsiyari",
     description: "The gateway to Panchachuli Peaks and Birthi Falls. Offers rugged trekking landscapes and breathtaking alpine views.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/e/ea/Panchachuli_peaks_from_Munsyari.jpg",
+    image: `${prefix}/images/dest_munsiyari.png`,
   },
   {
     id: "adi-kailash",
@@ -89,8 +89,8 @@ export const experiences = [
     description: "Slow-paced, culturally enriching walks through ancient villages with expert local storytellers."
   },
   {
-    icon: "☕",
-    title: "Boutique Stays",
+    icon: "🏡",
+    title: "Premium Mountain Retreats",
     description: "Curated local homestays offering modern comforts, warm hospitality, and organic Pahadi cuisine."
   }
 ];
