@@ -6,7 +6,7 @@ import { team } from '@/content/data';
 
 export const metadata = {
   title: 'Contact Us',
-  description: 'Reach out to us to plan your peaceful Himalayan retreat.',
+  description: 'Contact Kumaon Valley Explorers to plan your peaceful Himalayan retreat. Get in touch for custom tour packages, taxi services, and travel plans in Kumaon, Uttarakhand.',
 };
 
 export default function ContactPage() {
@@ -19,7 +19,7 @@ export default function ContactPage() {
       <FramerWrapper className="container mx-auto px-4 max-w-6xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <ContactInfoCard />
-          <div className="bg-white p-10 rounded-[2rem] shadow-xl border border-border/40">
+          <div className="bg-card p-10 rounded-[2rem] shadow-xl border border-border/40">
             <h2 className="text-xl font-medium mb-6 text-foreground font-serif">Quick Enquiry</h2>
             <ContactForm />
           </div>

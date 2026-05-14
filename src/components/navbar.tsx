@@ -26,7 +26,7 @@ export function Navbar() {
   const closeMenu = () => { setIsMobileMenuOpen(false); setActiveDropdown(null); };
 
   return (
-    <header className={`sticky top-0 z-50 w-full transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}>
+    <header className={`sticky top-0 z-50 w-full transition-all duration-300 ${scrolled ? 'bg-card/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}>
       <div className="container mx-auto flex items-center justify-between px-4 lg:px-8">
         <Link href="/" className="flex items-center space-x-3 group">
           <Image src={`${siteConfig.basePath}/logo/icon.svg`} alt="Logo" width={40} height={40} className="transition-transform group-hover:scale-110 duration-300" />
@@ -47,7 +47,7 @@ export function Navbar() {
               <AnimatePresence>
                 {link.subLinks && activeDropdown === link.name && (
                   <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 10 }} className="absolute top-full left-0 w-48 pt-4">
-                    <div className="bg-white rounded-xl shadow-xl border border-gray-100 py-1 overflow-hidden">
+                    <div className="bg-card rounded-xl shadow-xl border border-border py-1 overflow-hidden">
                       {link.subLinks.map((sub) => (
                         <Link key={sub.name} href={sub.href} className="block px-5 py-2.5 text-xs hover:bg-gray-50 transition-colors normal-case">
                           {sub.name}
@@ -76,7 +76,7 @@ export function Navbar() {
       {/* Mobile Nav */}
       <AnimatePresence>
         {isMobileMenuOpen && (
-          <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} className="md:hidden bg-white border-t border-gray-100">
+          <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} className="md:hidden bg-card border-t border-border">
             <nav className="flex flex-col p-6 space-y-4">
               {siteConfig.navLinks.map((link) => (
                 <div key={link.name}>

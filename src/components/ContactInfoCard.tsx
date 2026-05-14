@@ -3,7 +3,7 @@ import { colors, fonts } from '@/styles/tokens';
 import { siteConfig } from '@/config/site';
 
 export const ContactInfoCard: React.FC = () => (
-  <div className="space-y-6 text-center">
+  <div className="space-y-6 text-left">
     <h3
       className="font-serif text-2xl font-light"
       style={{ color: colors.primary, fontFamily: fonts.heading }}
@@ -31,7 +31,7 @@ export const ContactInfoCard: React.FC = () => (
       </p>
     </div>
 
-    <div className="flex justify-center gap-4 mt-4">
+    <div className="flex justify-start gap-4 mt-4">
       <a href={siteConfig.social.instagram} title="Instagram" className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
       </a>

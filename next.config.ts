@@ -2,7 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/kumaon-valley-explorers' : '',
+  basePath: process.env.DEPLOY_TARGET === 'gh-pages' ? '/kumaon-valley-explorers' : '',
+  outputFileTracingRoot: __dirname,
   images: {
     unoptimized: true,
     remotePatterns: [

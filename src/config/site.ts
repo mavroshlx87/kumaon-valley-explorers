@@ -1,11 +1,11 @@
-const isProd = process.env.NODE_ENV === 'production';
+const isGHPages = process.env.DEPLOY_TARGET === 'gh-pages';
 
 export const siteConfig = {
   name: "Kumaon Valley Explorers",
   shortName: "KVE",
   domain: "kumaonvalley.in",
   url: "https://kumaonvalley.in",
-  basePath: isProd ? '/kumaon-valley-explorers' : '',
+  basePath: isGHPages ? '/kumaon-valley-explorers' : '',
   description: "Experience profound peace, spiritual rejuvenation, and serene holidays in the majestic Kumaon Himalayas.",
   contact: {
     email: "kumaonvalleyexplorers@gmail.com",
@@ -23,6 +23,7 @@ export const siteConfig = {
     { name: "About Us", href: "/about" },
     { name: "Destinations", href: "/destinations" },
     { name: "Experiences", href: "/experiences" },
+    { name: "Packages", href: "/packages" },
     { 
       name: "Our Services", 
       href: "#", 
