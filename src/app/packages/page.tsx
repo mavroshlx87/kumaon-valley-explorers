@@ -22,7 +22,7 @@ export default function PackagesPage() {
         '@context': 'https://schema.org',
         '@type': 'ItemList',
         name: 'Kumaon Valley Tour Packages',
-        description: 'Curated Kumaon Himalayan tour packages starting from ₹4,499. Includes Nainital, Binsar, Ranikhet, Om Parvat, and Munsiyari.',
+        description: 'Curated Kumaon Himalayan tour packages starting from ₹8,499. Includes Nainital, Binsar, Ranikhet, Om Parvat, and Munsiyari.',
         numberOfItems: tourPackages.length,
         itemListElement: tourPackages.map((pkg, i) => ({
           '@type': 'ListItem',

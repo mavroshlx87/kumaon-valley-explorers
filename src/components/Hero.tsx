@@ -20,9 +20,18 @@ export const Hero: React.FC<HeroProps> = ({
 }) => {
   return (
     <section 
-      className="relative w-full h-[60vh] md:h-[85vh] min-h-[400px] md:min-h-[600px] flex items-center justify-center overflow-hidden bg-cover bg-center bg-primary"
-      style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${backgroundImage})` }}
+      className="relative w-full h-[60vh] md:h-[85vh] min-h-[400px] md:min-h-[600px] flex items-center justify-center overflow-hidden bg-primary"
     >
+      {/* Animated Background simulating drone movement */}
+      <motion.div
+        className="absolute inset-0 z-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+        initial={{ scale: 1 }}
+        animate={{ scale: 1.15, x: ["0%", "-2%", "0%"], y: ["0%", "2%", "0%"] }}
+        transition={{ duration: 40, ease: "linear", repeat: Infinity, repeatType: "mirror" }}
+      />
+      <div className="absolute inset-0 z-0 bg-black/50" />
+
 
       <div className="container relative z-10 mx-auto px-4 text-center">
         <motion.div
@@ -32,12 +41,12 @@ export const Hero: React.FC<HeroProps> = ({
           className="max-w-4xl mx-auto"
         >
           <p
-            className="uppercase tracking-[0.3em] text-sm md:text-base font-medium mb-6 text-accent font-body"
+            className="uppercase tracking-[0.3em] text-xs md:text-sm font-medium mb-6 text-accent font-body"
           >
             {subtitle}
           </p>
           <h1
-            className="text-4xl md:text-6xl lg:text-7xl font-light mb-12 leading-[1.1] text-white font-serif"
+            className="text-3xl md:text-4xl lg:text-5xl font-light mb-12 leading-[1.2] text-white font-serif"
           >
             {title}
           </h1>

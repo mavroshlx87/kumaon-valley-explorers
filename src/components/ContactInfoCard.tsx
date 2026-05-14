@@ -4,10 +4,7 @@ import { siteConfig } from '@/config/site';
 
 export const ContactInfoCard: React.FC = () => (
   <div className="space-y-6 text-left">
-    <h3
-      className="font-serif text-2xl font-light"
-      style={{ color: colors.primary, fontFamily: fonts.heading }}
-    >
+    <h3 className="font-serif text-2xl font-light text-foreground mb-2">
       We’re here for you
     </h3>
 

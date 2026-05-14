@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     default: `${siteConfig.name} — Soulful Himalayan Tourism in Kumaon`,
     template: `%s | ${siteConfig.name}`,
   },
-  description: 'Experience peaceful, spiritually enriching tours in the Kumaon Himalayas. Premium homestays, yoga retreats, heritage walks, and curated tour packages starting from ₹4,499. Plan your serene mountain getaway today.',
+  description: 'Experience peaceful, spiritually enriching tours in the Kumaon Himalayas. Premium homestays, yoga retreats, heritage walks, and curated tour packages starting from ₹8,499. Plan your serene mountain getaway today.',
   keywords: [
     "Kumaon tour packages",
     "Uttarakhand tourism",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: siteConfig.url,
     title: `${siteConfig.name} — Soulful Himalayan Tourism`,
-    description: 'Curated Kumaon Himalayan tours with premium homestays, yoga retreats, and heritage walks. Starting from ₹4,499/person.',
+    description: 'Curated Kumaon Himalayan tours with premium homestays, yoga retreats, and heritage walks. Starting from ₹8,499/person.',
     siteName: siteConfig.name,
     images: [
       {
@@ -79,7 +79,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} ${ebGaramond.variable} font-body min-h-screen flex flex-col`}>
         <Navbar />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 overflow-x-hidden">{children}</main>
         <Footer />
         <WhatsAppButton />
       </body>

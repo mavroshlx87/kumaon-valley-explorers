@@ -28,7 +28,7 @@ export default function Home() {
       <Hero
         title="Soulful connection with the Himalayas"
         subtitle="Welcome to Kumaon Valley"
-        backgroundImage={`${siteConfig.basePath}/images/hero.jpg`}
+        backgroundImage={`${siteConfig.basePath}/images/hero_drone.png`}
         ctaText="Explore Destinations"
         ctaHref="/destinations"
       />

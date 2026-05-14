@@ -128,7 +128,7 @@ export const tourPackages = [
     title: 'Nainital Lake & Temple Tour',
     destination: 'Nainital',
     duration: '3 Nights / 4 Days',
-    startingPrice: 4999,
+    startingPrice: 8499,
     difficulty: 'Easy',
     image: `${prefix}/images/dest_nainital.jpg`,
     highlights: [
@@ -145,7 +145,7 @@ export const tourPackages = [
     title: 'Binsar Wildlife & Himalayan Views',
     destination: 'Binsar',
     duration: '3 Nights / 4 Days',
-    startingPrice: 5499,
+    startingPrice: 8999,
     difficulty: 'Easy',
     image: `${prefix}/images/dest_binsar.jpg`,
     highlights: [
@@ -162,7 +162,7 @@ export const tourPackages = [
     title: 'Ranikhet Tranquility Retreat',
     destination: 'Ranikhet',
     duration: '2 Nights / 3 Days',
-    startingPrice: 4499,
+    startingPrice: 8499,
     difficulty: 'Easy',
     image: `${prefix}/images/dest_pithoragarh.jpg`,
     highlights: [
@@ -179,7 +179,7 @@ export const tourPackages = [
     title: 'Om Parvat Sacred Expedition',
     destination: 'Om Parvat',
     duration: '7 Nights / 8 Days',
-    startingPrice: 12999,
+    startingPrice: 16999,
     difficulty: 'Moderate',
     image: `${prefix}/images/dest_munsiyari.jpg`,
     highlights: [
@@ -196,7 +196,7 @@ export const tourPackages = [
     title: 'Munsiyari Alpine Adventure',
     destination: 'Munsiyari',
     duration: '4 Nights / 5 Days',
-    startingPrice: 7999,
+    startingPrice: 12999,
     difficulty: 'Moderate',
     image: `${prefix}/images/dest_munsiyari.jpg`,
     highlights: [
