@@ -2,7 +2,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: process.env.DEPLOY_TARGET === 'gh-pages' ? '/kumaon-valley-explorers' : '',
   outputFileTracingRoot: __dirname,
   allowedDevOrigins: ['192.168.0.101'],
   images: {

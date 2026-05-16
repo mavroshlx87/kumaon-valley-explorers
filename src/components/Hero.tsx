@@ -52,15 +52,18 @@ export const Hero: React.FC<HeroProps> = ({
             {title}
           </h1>
           {ctaText && ctaHref && (
-            <Link href={ctaHref} passHref legacyBehavior>
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-block"
+            >
+              <Link
+                href={ctaHref}
                 className="inline-block px-10 py-4 rounded-full text-sm font-medium tracking-widest uppercase transition-all shadow-2xl bg-white text-primary font-body"
               >
                 {ctaText}
-              </motion.a>
-            </Link>
+              </Link>
+            </motion.div>
           )}
         </motion.div>
       </div>

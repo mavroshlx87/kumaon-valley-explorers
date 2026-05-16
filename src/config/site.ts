@@ -5,7 +5,7 @@ export const siteConfig = {
   shortName: "KVE",
   domain: "kumaonvalley.in",
   url: "https://kumaonvalley.in",
-  basePath: isGHPages ? '/kumaon-valley-explorers' : '',
+  basePath: '',
   description: "Experience profound peace, spiritual rejuvenation, and serene holidays in the majestic Kumaon Himalayas.",
   contact: {
     email: "kumaonvalleyexplorers@gmail.com",
