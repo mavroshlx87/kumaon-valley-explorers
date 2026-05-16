@@ -47,7 +47,7 @@ export const Hero: React.FC<HeroProps> = ({
             {subtitle}
           </p>
           <h1
-            className="text-3xl md:text-4xl lg:text-5xl font-light mb-12 leading-[1.2] text-white font-serif"
+            className="text-2xl md:text-4xl lg:text-5xl font-light mb-12 leading-[1.2] text-white font-serif"
           >
             {title}
           </h1>

@@ -30,11 +30,11 @@ export function Navbar() {
       <div className="container mx-auto flex items-center justify-between px-4 lg:px-8">
         <Link href="/" className="flex items-center space-x-3 group">
           <Image src={`${siteConfig.basePath}/logo/icon.svg`} alt="Logo" width={40} height={40} className="transition-transform group-hover:scale-110 duration-300" />
-          <span className="font-serif text-xl md:text-2xl text-primary">{siteConfig.name}</span>
+          <span className="font-serif text-lg md:text-xl lg:text-2xl text-primary whitespace-nowrap">{siteConfig.name}</span>
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center space-x-6 ml-auto mr-8 text-[13px] font-medium uppercase tracking-wider text-primary">
+        <nav className="hidden lg:flex items-center space-x-6 ml-auto mr-8 text-[13px] font-medium uppercase tracking-wider text-primary">
           {siteConfig.navLinks.map((link) => (
             <div key={link.name} className="relative group" onMouseEnter={() => setActiveDropdown(link.name)} onMouseLeave={() => setActiveDropdown(null)}>
               {link.subLinks ? (
@@ -61,12 +61,12 @@ export function Navbar() {
           ))}
         </nav>
 
-        <Link href="/contact" className="hidden md:block bg-primary text-white px-7 py-2.5 rounded-full text-[14px] font-serif tracking-wide hover:bg-accent transition-all shadow-md">
+        <Link href="/contact" className="hidden lg:block bg-primary text-white px-7 py-2.5 rounded-full text-[14px] font-serif tracking-wide hover:bg-accent transition-all shadow-md">
           Plan Your Trip
         </Link>
 
         {/* Mobile Toggle */}
-        <button className="md:hidden p-2 text-primary" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+        <button className="lg:hidden p-2 text-primary" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
           <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={isMobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
           </svg>
@@ -76,7 +76,7 @@ export function Navbar() {
       {/* Mobile Nav */}
       <AnimatePresence>
         {isMobileMenuOpen && (
-          <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} className="md:hidden bg-card border-t border-border overflow-hidden">
+          <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} className="lg:hidden bg-card border-t border-border overflow-hidden">
             <nav className="flex flex-col p-6 space-y-4">
               {siteConfig.navLinks.map((link) => (
                 <div key={link.name}>
