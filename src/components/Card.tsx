@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 interface CardProps {
@@ -29,5 +30,5 @@ export const Card: React.FC<CardProps> = ({ title, image, href, className }) => 
     </motion.div>
   );
 
-  return href ? <a href={href}>{content}</a> : content;
+  return href ? <Link href={href} className="block">{content}</Link> : content;
 };
