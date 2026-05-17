@@ -34,7 +34,7 @@ export const Hero: React.FC<HeroProps> = ({
       <div className="absolute inset-0 z-0 bg-black/50" />
 
 
-      <div className="container relative z-10 mx-auto px-4 text-center">
+      <div className="container relative z-10 mx-auto px-4 text-center mt-16 md:mt-32">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
