@@ -52,14 +52,14 @@ export default function ExperiencesPage() {
       <ExperienceSection
         title="Cultural Immersion"
         description="Visit ancient temples, learn traditional Kumaoni crafts, and share soulful meals with local families. Experience the warmth of mountain hospitality first-hand."
-        imageUrl={`${siteConfig.basePath}/images/hiljatra.jpg`}
+        imageUrl={`${siteConfig.basePath}/images/hiljatra.webp`}
         reverse
       />
 
       <ExperienceSection
         title="Premium Mountain Retreats"
         description="Stay in premium, carefully curated local homestays that offer modern comforts, warm hospitality, and pure organic local cuisine. Chosen for their stunning views and soul-soothing peace."
-        imageUrl={`${siteConfig.basePath}/images/homestay.jpg`}
+        imageUrl={`${siteConfig.basePath}/images/homestay.webp`}
       />
     </main>
   );

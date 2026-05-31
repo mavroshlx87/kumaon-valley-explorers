@@ -1,8 +1,9 @@
 import type { MetadataRoute } from 'next';
+import { siteConfig } from "@/config/site";
 
 export const dynamic = 'force-static';
 
-const BASE_URL = 'https://kumaonvalley.in/kumaon-valley-explorers';
+const BASE_URL = `${siteConfig.url}${siteConfig.basePath}`;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [

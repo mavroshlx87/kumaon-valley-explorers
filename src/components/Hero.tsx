@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface HeroProps {
   title: string;
@@ -25,12 +26,20 @@ export const Hero: React.FC<HeroProps> = ({
     >
       {/* Animated Background simulating drone movement */}
       <motion.div
-        className="absolute inset-0 z-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        className="absolute inset-0 z-0"
         initial={{ scale: 1 }}
         animate={{ scale: 1.15, x: ["0%", "-2%", "0%"], y: ["0%", "2%", "0%"] }}
         transition={{ duration: 40, ease: "linear", repeat: Infinity, repeatType: "mirror" }}
-      />
+      >
+        <Image
+          src={backgroundImage}
+          alt="Hero background image simulating drone movement over Kumaon Valley"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+      </motion.div>
       <div className="absolute inset-0 z-0 bg-black/50" />
 
 

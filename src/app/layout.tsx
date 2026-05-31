@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     images: [
       {
-        url: `${siteConfig.basePath}/images/hero.jpg`,
+        url: `${siteConfig.basePath}/images/hero.webp`,
         width: 1200,
         height: 630,
         alt: 'Kumaon Valley Explorers — Himalayan mountain landscape',
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: `${siteConfig.name} — Soulful Himalayan Tourism`,
     description: 'Curated Kumaon Himalayan tours with premium homestays, yoga retreats, and heritage walks.',
-    images: [`${siteConfig.basePath}/images/hero.jpg`],
+    images: [`${siteConfig.basePath}/images/hero.webp`],
   },
 };
 

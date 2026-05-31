@@ -82,7 +82,7 @@ export function Navbar() {
                 <div key={link.name}>
                   {link.subLinks ? (
                     <>
-                      <button className="w-full flex justify-between items-center text-lg font-serif text-primary" onClick={() => setActiveDropdown(activeDropdown === link.name ? null : link.name)}>
+                      <button className="w-full flex justify-between items-center text-lg font-serif text-primary uppercase tracking-wider" onClick={() => setActiveDropdown(activeDropdown === link.name ? null : link.name)}>
                         {link.name} <ChevronIcon className={activeDropdown === link.name ? 'rotate-180' : ''} />
                       </button>
                       {activeDropdown === link.name && (
@@ -94,7 +94,7 @@ export function Navbar() {
                       )}
                     </>
                   ) : (
-                    <Link href={link.href} onClick={closeMenu} className="block text-lg font-serif text-primary border-b border-gray-50 pb-2">{link.name}</Link>
+                    <Link href={link.href} onClick={closeMenu} className="block text-lg font-serif text-primary border-b border-gray-50 pb-2 uppercase tracking-wider">{link.name}</Link>
                   )}
                 </div>
               ))}

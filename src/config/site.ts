@@ -25,7 +25,7 @@ export const siteConfig = {
     { name: "Experiences", href: "/experiences" },
     { name: "Packages", href: "/packages" },
     { 
-      name: "Our Services", 
+      name: "OUR SERVICES", 
       href: "#", 
       subLinks: [
         { name: "Taxi Services", href: "/contact?service=taxi" },

@@ -35,7 +35,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <FramerWrapper initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }}>
             <div className="relative h-[500px] md:h-[600px] rounded-[2rem] overflow-hidden shadow-xl">
-              <Image src={`${siteConfig.basePath}/images/philosophy.jpg`} alt="Travelers exploring the serene Kumaon Valley mountains in Uttarakhand" fill priority className="object-cover" />
+              <Image src={`${siteConfig.basePath}/images/philosophy.webp`} alt="Travelers exploring the serene Kumaon Valley mountains in Uttarakhand" fill priority className="object-cover" />
             </div>
           </FramerWrapper>
           <FramerWrapper initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }}>
