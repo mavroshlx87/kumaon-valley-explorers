@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const WHATSAPP_NUMBER = '918171929602';
+const WHATSAPP_NUMBER = '918650952529';
 const WHATSAPP_MESSAGE = encodeURIComponent(
   'Hi! I am interested in planning a trip to Kumaon Valley. Could you help me with details?'
 );

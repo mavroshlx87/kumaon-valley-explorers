@@ -9,7 +9,7 @@ export const siteConfig = {
   description: "Experience profound peace, spiritual rejuvenation, and serene holidays in the majestic Kumaon Himalayas.",
   contact: {
     email: "kumaonvalleyexplorers@gmail.com",
-    phone: "+91 8171929602",
+    phone: "+91 8650952529",
     address: "Bilaspur Kandli, Dehradun, Uttarakhand - 248141, India",
   },
   social: {
